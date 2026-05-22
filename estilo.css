@@ -229,3 +229,98 @@ button:hover {
     margin: 20px 0;         
     box-shadow: 0px 4px 15px rgba(0,0,0,0.3); 
 }
+/* Planes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: white;
+}
+
+header {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid orange;
+}
+
+header h1 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background-color: #1c1c1c;
+    width: 300px;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(255, 165, 0, 0.4);
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta h2 {
+    color: orange;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.precio {
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.tarjeta ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.tarjeta ul li {
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+.boton {
+    background-color: orange;
+    color: black;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: white;
+}
+
+.footer-planes {
+    background-color: #0f2027;
+    color: #888;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    border-top: 1px solid #0b3a4d;
+    width: 100%;
+}
