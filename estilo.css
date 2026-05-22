@@ -1,0 +1,231 @@
+/* REGLAS GLOBALES */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+/* HEADER Y NAVEGACIÓN */
+.header-sitio {
+    background-color: rgba(15, 32, 39, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 2px solid #203a43;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #ff7b00;
+}
+
+.nav-sitio a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.nav-sitio a:hover, .nav-sitio a.activo {
+    color: #ff7b00;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor-principal {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* ESTILOS EXCLUSIVOS DE LA PÁGINA DE INICIO */
+.inicio-seccion {
+    flex-direction: column;
+    text-align: center;
+}
+
+.bienvenida {
+    margin-bottom: 40px;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.bienvenida h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.bienvenida p {
+    font-size: 18px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.caracteristicas {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin-bottom: 40px;
+}
+
+.tarjeta-info {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 15px;
+    width: 250px;
+    border: 1px solid #203a43;
+}
+
+.tarjeta-info h3 {
+    color: #ff7b00;
+    margin-bottom: 10px;
+}
+
+.tarjeta-info p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.accion {
+    margin-bottom: 20px;
+}
+
+.accion p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #eee;
+}
+
+.btn-asociarse {
+    background: #ff7b00;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-asociarse:hover {
+    background: #e06c00;
+    transform: scale(1.05);
+}
+
+/* FORMULARIO */
+.formulario {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 35px rgba(0,0,0,0.6);
+    color: #333;
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    color: #203a43;
+}
+
+.subtitulo-form {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* LABELS EN FORMULARIO */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #203a43;
+    font-size: 14px;
+}
+
+/* INPUTS, SELECT Y TEXTAREA */
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.3s;
+    background: #fdfdfd;
+}
+
+textarea {
+    resize: none;
+    font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #ff7b00;
+    box-shadow: 0px 0px 10px rgba(255,123,0,0.3);
+    outline: none;
+}
+
+/* BOTON FORMULARIO */
+button {
+    width: 100%;
+    padding: 14px;
+    background: #203a43;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+button:hover {
+    background: #ff7b00;
+    transform: scale(1.02);
+}
+
+/* FOOTER */
+.footer-sitio {
+    background-color: #0f2027;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    color: #888;
+    border-top: 1px solid #203a43;
+    margin-top: auto; /* Empuja el footer abajo si hay espacio */
+}
+/* Control de imágenes */
+.imagen-destacada {
+    width: 100%;           
+    max-width: 600px;       
+    height: auto;          
+    border-radius: 15px;    
+    margin: 20px 0;         
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3); 
+}
